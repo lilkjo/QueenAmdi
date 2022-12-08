@@ -1,0 +1,54 @@
+{
+    "name": "queen_amdi-multi_device",
+    "version": "4.0.2",
+    "description": "Queen Amdi [WA Multi-device] - A WhatsApp based third party application that provide many services with a real-time automated conversational experience.",
+    "main": "./assets/amdiModule.js",
+    "scripts": {
+        "package": "yarn install --network-concurrency 1",
+        "start": "pm2 start ./assets/amdiModule.js --name QueenAmdiMD",
+        "pm-run": "sudo yarn global add pm2 && pm2 start ./assets/amdiModule.js --name QueenAmdiMD && pm2 log QueenAmdiMD",
+        "pm-restart": "pm2 restart QueenAmdiMD"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lilkjo/QueenAmdi.git"
+    },
+    "keywords": [
+        "whatsapp"
+    ],
+    "author": "Black Amda",
+    "developer": "AN Tech",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/lilkjo/QueenAmdi/issues"
+    },
+    "homepage": "https://github.com/lilkjo/QueenAmdi#readme",
+    "dependencies": {
+        "@adiwajshing/baileys": "git+https://github.com/AN-Tech-Crew/BaileysForQueenAmdi.git#QueenAmdi_v4",
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "@blackamda/song_video_dl": "^1.0.0",
+        "@blackamda/telegram-image-url": "^1.0.0",
+        "@hapi/boom": "^10.0.0",
+        "axios": "^0.27.2",
+        "dotenv": "^16.0.0",
+        "express": "^4.18.1",
+        "ffmpeg": "^0.0.4",
+        "fluent-ffmpeg": "^2.1.2",
+        "google-play-scraper": "^9.1.1",
+        "got": "^11.8.2",
+        "https": "1.0.0",
+        "link-preview-js": "^2.1.13",
+        "moment": "2.29.4",
+        "node-fetch": "2.6.7",
+        "path": "0.12.7",
+        "pg": "^8.7.3",
+        "qrcode": "^1.5.0",
+        "qrcode-terminal": "^0.12.0",
+        "queen_amdi_core": "^1.2.3",
+        "queen-amdi-wa-sticker": "^1.0.1",
+        "request": "^2.88.2",
+        "sharp": "^0.30.5",
+        "simple-git": "^3.10.0",
+        "translatte": "^3.0.1"
+    }
+}
